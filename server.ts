@@ -146,9 +146,30 @@ async function startServer() {
     return "None (Below 75%)";
   }
 
+  function resolveGoogleSheetWebAppUrl(): string {
+    const canonical = String(process.env.GOOGLE_SHEET_WEBAPP_URL || "").trim();
+    if (canonical) return canonical;
+
+    const aliases = [
+      process.env.GOOGLE_SEET_WEBAPP_URL,
+      process.env.google_sheet_webapp_url,
+      process.env.google_seet_webapp_url,
+    ];
+
+    for (const alias of aliases) {
+      const value = String(alias || "").trim();
+      if (value) {
+        process.env.GOOGLE_SHEET_WEBAPP_URL = value;
+        return value;
+      }
+    }
+
+    return "";
+  }
+
   // Google Sheet Web App Integration Storage
   // Pre-configured with the official IEEE deployment URL (kept strictly server-side)
-  let configuredGoogleSheetUrl = String(process.env.GOOGLE_SHEET_WEBAPP_URL || "").trim();
+  let configuredGoogleSheetUrl = resolveGoogleSheetWebAppUrl();
 
   // Deduplication caches: prevent duplicate row entries in Google Sheet
   const syncedSubmissionsCache = new Map<string, { success: boolean; message: string; data?: any }>();

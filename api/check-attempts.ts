@@ -1,3 +1,24 @@
+const resolveGoogleSheetWebAppUrl = (): string => {
+  const canonical = String(process.env.GOOGLE_SHEET_WEBAPP_URL || "").trim();
+  if (canonical) return canonical;
+
+  const aliases = [
+    process.env.GOOGLE_SEET_WEBAPP_URL,
+    process.env.google_sheet_webapp_url,
+    process.env.google_seet_webapp_url,
+  ];
+
+  for (const alias of aliases) {
+    const value = String(alias || "").trim();
+    if (value) {
+      process.env.GOOGLE_SHEET_WEBAPP_URL = value;
+      return value;
+    }
+  }
+
+  return "";
+};
+
 export default async function handler(req: any, res: any) {
   res.setHeader("Cache-Control", "no-store, no-cache, must-revalidate");
 
@@ -7,7 +28,7 @@ export default async function handler(req: any, res: any) {
   }
 
   try {
-    const configuredUrl = String(process.env.GOOGLE_SHEET_WEBAPP_URL || "").trim();
+    const configuredUrl = resolveGoogleSheetWebAppUrl();
     if (!configuredUrl) throw new Error("GOOGLE_SHEET_WEBAPP_URL is not configured");
     const url = new URL(configuredUrl);
     url.searchParams.set("action", "checkAttempts");

@@ -11,8 +11,29 @@ function determineGift(percentage: number): string {
 
 const questionsMap = new Map<string, any>((rawQuestions as any[]).map((q) => [q.id, q]));
 
+function resolveGoogleSheetWebAppUrl(): string {
+  const canonical = String(process.env.GOOGLE_SHEET_WEBAPP_URL || "").trim();
+  if (canonical) return canonical;
+
+  const aliases = [
+    process.env.GOOGLE_SEET_WEBAPP_URL,
+    process.env.google_sheet_webapp_url,
+    process.env.google_seet_webapp_url,
+  ];
+
+  for (const alias of aliases) {
+    const value = String(alias || "").trim();
+    if (value) {
+      process.env.GOOGLE_SHEET_WEBAPP_URL = value;
+      return value;
+    }
+  }
+
+  return "";
+}
+
 async function getAttemptCount(enrollmentNumber: string): Promise<number> {
-  const sheetUrl = String(process.env.GOOGLE_SHEET_WEBAPP_URL || "").trim();
+  const sheetUrl = resolveGoogleSheetWebAppUrl();
   if (!sheetUrl) return submissions.filter(
     (submission) => submission.student.enrollmentNumber.trim().toUpperCase() === enrollmentNumber
   ).length;
@@ -143,7 +164,7 @@ export default async function handler(req: any, res: any) {
     // Forward directly to Google Sheet
     let sheetResult: any = { success: false, message: "Google Sheet sync was not confirmed." };
     try {
-      const sheetUrl = String(process.env.GOOGLE_SHEET_WEBAPP_URL || "").trim();
+      const sheetUrl = resolveGoogleSheetWebAppUrl();
       if (!sheetUrl) {
         sheetResult = { success: false, message: "GOOGLE_SHEET_WEBAPP_URL is not configured in Vercel." };
       } else {

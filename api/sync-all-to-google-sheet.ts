@@ -1,6 +1,27 @@
 import { submissions } from "./_store";
 import { submitToGoogleSheet } from "../server/googleSheetsClient";
 
+function resolveGoogleSheetWebAppUrl(): string {
+  const canonical = String(process.env.GOOGLE_SHEET_WEBAPP_URL || "").trim();
+  if (canonical) return canonical;
+
+  const aliases = [
+    process.env.GOOGLE_SEET_WEBAPP_URL,
+    process.env.google_sheet_webapp_url,
+    process.env.google_seet_webapp_url,
+  ];
+
+  for (const alias of aliases) {
+    const value = String(alias || "").trim();
+    if (value) {
+      process.env.GOOGLE_SHEET_WEBAPP_URL = value;
+      return value;
+    }
+  }
+
+  return "";
+}
+
 export default async function handler(req: any, res: any) {
   res.setHeader("Cache-Control", "no-store, no-cache, must-revalidate");
 
@@ -8,7 +29,7 @@ export default async function handler(req: any, res: any) {
     return res.status(405).json({ success: false, message: "Method not allowed. Use POST." });
   }
 
-  const targetUrl = String(req.body?.webAppUrl || process.env.GOOGLE_SHEET_WEBAPP_URL || "").trim();
+  const targetUrl = String(req.body?.webAppUrl || resolveGoogleSheetWebAppUrl()).trim();
   if (!targetUrl) {
     return res.status(400).json({ success: false, message: "GOOGLE_SHEET_WEBAPP_URL is not configured in Vercel." });
   }
