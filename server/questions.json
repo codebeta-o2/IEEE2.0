@@ -1,0 +1,1262 @@
+[
+  {
+    "id": "q1",
+    "subject": "IEEE Basics",
+    "question": "What does IEEE stand for?",
+    "options": [
+      "Institute of Electrical and Electronic Engineers",
+      "Institute of Electrical and Electronics Engineers",
+      "International Electrical and Electronics Engineering",
+      "Institute of Electronic Engineering"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Institute of Electrical and Electronics Engineers\"."
+  },
+  {
+    "id": "q2",
+    "subject": "IEEE Basics",
+    "question": "In which year was IEEE formed through the merger of AIEE and IRE?",
+    "options": [
+      "1884",
+      "1947",
+      "1963",
+      "1975"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The correct answer is \"1963\"."
+  },
+  {
+    "id": "q3",
+    "subject": "IEEE Basics",
+    "question": "IEEE Day is celebrated on which day in 2026?",
+    "options": [
+      "October 1",
+      "October 5",
+      "October 6",
+      "October 10"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The correct answer is \"October 6\"."
+  },
+  {
+    "id": "q4",
+    "subject": "IEEE Basics",
+    "question": "IEEE Day commemorates a historic technical meeting that took place in which year?",
+    "options": [
+      "1876",
+      "1884",
+      "1901",
+      "1963"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"1884\"."
+  },
+  {
+    "id": "q5",
+    "subject": "IEEE Basics",
+    "question": "IEEE identifies the 1884 meeting as the historical event behind IEEE Day. Which organization is one of IEEE's predecessor organizations?",
+    "options": [
+      "NASA",
+      "AIEE",
+      "ISO",
+      "CERN"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"AIEE\"."
+  },
+  {
+    "id": "q6",
+    "subject": "IEEE Basics",
+    "question": "What is one major purpose of IEEE Standards?",
+    "options": [
+      "Entertainment",
+      "Interoperability and technical consistency",
+      "Sports management",
+      "Banking"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Interoperability and technical consistency\"."
+  },
+  {
+    "id": "q7",
+    "subject": "IEEE Basics",
+    "question": "IEEE describes standards as supporting interoperability and technological development. Which of the following is an IEEE technical society?",
+    "options": [
+      "IEEE Computer Society",
+      "World Computer Club",
+      "International Coding Society",
+      "Global Software Association"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The correct answer is \"IEEE Computer Society\"."
+  },
+  {
+    "id": "q8",
+    "subject": "IEEE Basics",
+    "question": "IEEE Xplore is mainly used for accessing:",
+    "options": [
+      "Movies",
+      "Research papers and technical literature",
+      "Online games",
+      "Social media"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Research papers and technical literature\"."
+  },
+  {
+    "id": "q9",
+    "subject": "ECE Basics",
+    "question": "What is the SI unit of electrical resistance?",
+    "options": [
+      "Volt",
+      "Ampere",
+      "Ohm",
+      "Watt"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The correct answer is \"Ohm\"."
+  },
+  {
+    "id": "q10",
+    "subject": "ECE Basics",
+    "question": "Which component stores electrical energy in an electric field?",
+    "options": [
+      "Resistor",
+      "Capacitor",
+      "Diode",
+      "Transistor"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Capacitor\"."
+  },
+  {
+    "id": "q11",
+    "subject": "ECE Basics",
+    "question": "What is the output?",
+    "codeSnippet": "A diode primarily allows current to flow:",
+    "options": [
+      "Equally in both directions",
+      "Mainly in one direction",
+      "Only when AC is applied",
+      "Only through reverse bias"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Mainly in one direction\"."
+  },
+  {
+    "id": "q12",
+    "subject": "ECE Basics",
+    "question": "What is the basic unit of digital information?",
+    "options": [
+      "Byte",
+      "Bit",
+      "Word",
+      "Register"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Bit\"."
+  },
+  {
+    "id": "q13",
+    "subject": "ECE Basics",
+    "question": "Which logic gate produces HIGH only when both inputs are HIGH?",
+    "options": [
+      "OR",
+      "XOR",
+      "AND",
+      "NOT"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The correct answer is \"AND\"."
+  },
+  {
+    "id": "q14",
+    "subject": "ECE Basics",
+    "question": "What is the full form of LED?",
+    "options": [
+      "Light Energy Device",
+      "Light Emitting Diode",
+      "Low Energy Diode",
+      "Light Electronic Display"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Light Emitting Diode\"."
+  },
+  {
+    "id": "q15",
+    "subject": "ECE Basics",
+    "question": "Which device is commonly used to amplify electrical signals?",
+    "options": [
+      "Transformer",
+      "Transistor",
+      "Fuse",
+      "Switch"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Transistor\"."
+  },
+  {
+    "id": "q16",
+    "subject": "ECE Basics",
+    "question": "What does ADC stand for?",
+    "options": [
+      "Analog Digital Circuit",
+      "Analog-to-Digital Converter",
+      "Automatic Data Controller",
+      "Analog Data Computer"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Analog-to-Digital Converter\"."
+  },
+  {
+    "id": "q17",
+    "subject": "ECE Basics",
+    "question": "Which quantity is measured in Hertz (Hz)?",
+    "options": [
+      "Voltage",
+      "Resistance",
+      "Frequency",
+      "Power"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The correct answer is \"Frequency\"."
+  },
+  {
+    "id": "q18",
+    "subject": "ECE Basics",
+    "question": "Which semiconductor material is commonly used for electronic devices?",
+    "options": [
+      "Silicon",
+      "Copper",
+      "Aluminum",
+      "Iron"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The correct answer is \"Silicon\"."
+  },
+  {
+    "id": "q19",
+    "subject": "C Programming",
+    "question": "What is the output of the following C code?",
+    "codeSnippet": "int x = 5;\nprintf(\"%d\", x + 3);",
+    "options": [
+      "5",
+      "8",
+      "15",
+      "53"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"8\"."
+  },
+  {
+    "id": "q20",
+    "subject": "C Programming",
+    "question": "Which data type is commonly used to store an integer in C?",
+    "options": [
+      "float",
+      "char",
+      "int",
+      "string"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The correct answer is \"int\"."
+  },
+  {
+    "id": "q21",
+    "subject": "Coding & Data Structures",
+    "question": "What is the output of the following C code?",
+    "codeSnippet": "int a = 5, b = 2;\nprintf(\"%d\", a / b);",
+    "options": [
+      "2.5",
+      "2",
+      "3",
+      "2.0"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"2\"."
+  },
+  {
+    "id": "q22",
+    "subject": "Coding & Data Structures",
+    "question": "What is the output?",
+    "codeSnippet": "int x = 10;\nif (x > 5)\nprintf(\"IEEE\");\nelse\nprintf(\"ECE\");",
+    "options": [
+      "ECE",
+      "IEEE",
+      "IEEE ECE",
+      "No output"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"IEEE\"."
+  },
+  {
+    "id": "q23",
+    "subject": "Coding & Data Structures",
+    "question": "What will be printed?",
+    "codeSnippet": "int sum = 0;\nfor(int i = 1; i <= 5; i++)\nsum += i;\nprintf(\"%d\", sum);",
+    "options": [
+      "10",
+      "15",
+      "20",
+      "5"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"15\"."
+  },
+  {
+    "id": "q24",
+    "subject": "Coding & Data Structures",
+    "question": "What is the output?",
+    "codeSnippet": "int x = 3;\nwhile(x > 0) {\nprintf(\"%d \", x);\nx--;\n}",
+    "options": [
+      "1 2 3",
+      "3 2 1",
+      "3 3 3",
+      "0 1 2"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"3 2 1\"."
+  },
+  {
+    "id": "q25",
+    "subject": "Coding & Data Structures",
+    "question": "Which data structure follows the LIFO principle?",
+    "options": [
+      "Queue",
+      "Stack",
+      "Array",
+      "Linked List"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Stack\"."
+  },
+  {
+    "id": "q26",
+    "subject": "Coding & Data Structures",
+    "question": "What is the output?",
+    "codeSnippet": "int a[] = {10, 20, 30, 40};\nprintf(\"%d\", a[2]);",
+    "options": [
+      "10",
+      "20",
+      "30",
+      "40"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The correct answer is \"30\"."
+  },
+  {
+    "id": "q27",
+    "subject": "Coding & Data Structures",
+    "question": "Which operator is used to find the remainder in C/C++?",
+    "options": [
+      "/",
+      "//",
+      "%",
+      "&"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The correct answer is \"%\"."
+  },
+  {
+    "id": "q28",
+    "subject": "Coding & Data Structures",
+    "question": "What is the output?",
+    "codeSnippet": "int x = 5;\nx++;\nx = x * 2;\nprintf(\"%d\", x);",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "15"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"11\"."
+  },
+  {
+    "id": "q29",
+    "subject": "Coding & Data Structures",
+    "question": "What does the following function return?",
+    "codeSnippet": "int square(int x) {\nreturn x * x;\n}\nIf square(6) is called:",
+    "options": [
+      "12",
+      "18",
+      "36",
+      "42"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The correct answer is \"36\"."
+  },
+  {
+    "id": "q30",
+    "subject": "Coding & Data Structures",
+    "question": "IEEE 802.3 is associated with:",
+    "options": [
+      "Ethernet",
+      "Wi-Fi",
+      "Bluetooth",
+      "NFC"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The correct answer is \"Ethernet\"."
+  },
+  {
+    "id": "q31",
+    "subject": "ECE",
+    "question": "What is the approximate voltage gain of an ideal voltage follower?",
+    "options": [
+      "0",
+      "1",
+      "10",
+      "Infinite"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"1\"."
+  },
+  {
+    "id": "q32",
+    "subject": "ECE",
+    "question": "Which modulation technique changes the amplitude of a carrier signal?",
+    "options": [
+      "FM",
+      "PM",
+      "AM",
+      "PCM"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The correct answer is \"AM\"."
+  },
+  {
+    "id": "q33",
+    "subject": "ECE",
+    "question": "In FM, which property of the carrier is varied?",
+    "options": [
+      "Amplitude",
+      "Frequency",
+      "Phase only",
+      "Power only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Frequency\"."
+  },
+  {
+    "id": "q34",
+    "subject": "ECE",
+    "question": "What is the main purpose of a transistor in an amplifier circuit?",
+    "options": [
+      "Store energy",
+      "Amplify signal",
+      "Convert AC to DC only",
+      "Measure resistance"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Amplify signal\"."
+  },
+  {
+    "id": "q35",
+    "subject": "ECE",
+    "question": "According to the Nyquist sampling theorem, the sampling frequency should be at least:",
+    "options": [
+      "Equal to maximum frequency",
+      "Twice the maximum frequency",
+      "Half the maximum frequency",
+      "Four times the minimum frequency"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Twice the maximum frequency\"."
+  },
+  {
+    "id": "q36",
+    "subject": "ECE",
+    "question": "Which circuit converts AC into DC?",
+    "options": [
+      "Oscillator",
+      "Rectifier",
+      "Amplifier",
+      "Modulator"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Rectifier\"."
+  },
+  {
+    "id": "q37",
+    "subject": "ECE",
+    "question": "What is the primary function of a multiplexer?",
+    "options": [
+      "One input to many outputs",
+      "Many inputs to one output",
+      "Amplify an input",
+      "Store data permanently"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Many inputs to one output\"."
+  },
+  {
+    "id": "q38",
+    "subject": "ECE",
+    "question": "Which flip-flop has a toggle mode?",
+    "options": [
+      "D",
+      "SR",
+      "T",
+      "None"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The correct answer is \"T\"."
+  },
+  {
+    "id": "q39",
+    "subject": "Coding",
+    "question": "What is the output?",
+    "codeSnippet": "int a = 10;\nint b = 3;\nprintf(\"%d\", a % b);",
+    "options": [
+      "0",
+      "1",
+      "3",
+      "3.33"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"1\"."
+  },
+  {
+    "id": "q40",
+    "subject": "Coding",
+    "question": "Which data structure follows the LIFO principle?",
+    "options": [
+      "Queue",
+      "Stack",
+      "Array",
+      "Linked list"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Stack\"."
+  },
+  {
+    "id": "q41",
+    "subject": "Advanced Coding",
+    "question": "What is the output?",
+    "codeSnippet": "#include <stdio.h>\nint main() {\nint a[] = {10, 20, 30, 40};\nint *p = a;\nprintf(\"%d\", *(p + 2));\nreturn 0;\n}",
+    "options": [
+      "10",
+      "20",
+      "30",
+      "40"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The correct answer is \"30\"."
+  },
+  {
+    "id": "q42",
+    "subject": "Advanced Coding",
+    "question": "What is the output?",
+    "codeSnippet": "#include <stdio.h>\nvoid fun() {\nstatic int x = 0;\nx++;\nprintf(\"%d \", x);\n}\nint main() {\nfun();\nfun();\nfun();\nreturn 0;\n}",
+    "options": [
+      "1 1 1",
+      "0 1 2",
+      "1 2 3",
+      "3 3 3"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The correct answer is \"1 2 3\"."
+  },
+  {
+    "id": "q43",
+    "subject": "Advanced Coding",
+    "question": "What is the output?",
+    "codeSnippet": "a = [1, 2, 3]\nb = a\nb.append(4)\nprint(a)",
+    "options": [
+      "[1, 2, 3]",
+      "[1, 2, 3, 4]",
+      "[4, 1, 2, 3]",
+      "Error"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"[1, 2, 3, 4]\"."
+  },
+  {
+    "id": "q44",
+    "subject": "Advanced Coding",
+    "question": "What is the output?",
+    "codeSnippet": "x = [1, 2, 3, 4, 5]\ny = [n*n for n in x if n % 2 == 0]\nprint(y)",
+    "options": [
+      "[1, 9, 25]",
+      "[2, 4]",
+      "[4, 16]",
+      "[1, 4, 9, 16, 25]"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The correct answer is \"[4, 16]\"."
+  },
+  {
+    "id": "q45",
+    "subject": "Advanced Coding",
+    "question": "What is the output?",
+    "codeSnippet": "class Test {\nstatic void show(int x) {\nSystem.out.println(\"Integer\");\n}\nstatic void show(double x) {\nSystem.out.println(\"Double\");\n}\npublic static void main(String[] args) {\nshow(10);\n}\n}",
+    "options": [
+      "Integer",
+      "Double",
+      "Both Integer and Double",
+      "Compilation error"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The correct answer is \"Integer\"."
+  },
+  {
+    "id": "q46",
+    "subject": "Advanced Coding",
+    "question": "What is the output?",
+    "codeSnippet": "public class Main {\npublic static void main(String[] args) {\nString a = new String(\"IEEE\");\nString b = new String(\"IEEE\");\nSystem.out.println(a == b);\nSystem.out.println(a.equals(b));\n}\n}",
+    "options": [
+      "true true",
+      "false false",
+      "false true",
+      "true false"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The correct answer is \"false true\"."
+  },
+  {
+    "id": "q47",
+    "subject": "Advanced Coding",
+    "question": "What is the output of the following C program?",
+    "codeSnippet": "#include <stdio.h>\nint fun(int n) {\nif (n == 0)\nreturn 0;\nreturn n + fun(n - 1);\n}\nint main() {\nprintf(\"%d\", fun(5));\nreturn 0;\n}",
+    "options": [
+      "10",
+      "15",
+      "20",
+      "25"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"15\"."
+  },
+  {
+    "id": "q48",
+    "subject": "Advanced Coding",
+    "question": "What is the output?",
+    "codeSnippet": "data = {\"A\": 10, \"B\": 20, \"C\": 30}\ntotal = 0\nfor value in data.values():\nif value > 10:\ntotal += value\nprint(total)",
+    "options": [
+      "30",
+      "40",
+      "50",
+      "60"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The correct answer is \"50\"."
+  },
+  {
+    "id": "q49",
+    "subject": "Advanced ECE",
+    "question": "An ideal op-amp has:",
+    "options": [
+      "Zero input impedance",
+      "Infinite input impedance",
+      "Infinite output current",
+      "Zero voltage gain"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Infinite input impedance\"."
+  },
+  {
+    "id": "q50",
+    "subject": "Advanced ECE",
+    "question": "In an inverting op-amp, if Rin = 10 kΩ and Rf = 100 kΩ, the voltage gain is:",
+    "options": [
+      "+10",
+      "−10",
+      "+0.1",
+      "−0.1"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"−10\"."
+  },
+  {
+    "id": "q51",
+    "subject": "Advanced ECE",
+    "question": "The bandwidth of a signal extending from 2 MHz to 8 MHz is:",
+    "options": [
+      "2 MHz",
+      "6 MHz",
+      "8 MHz",
+      "10 MHz"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"6 MHz\"."
+  },
+  {
+    "id": "q52",
+    "subject": "Advanced ECE",
+    "question": "What happens to the resonant frequency of an LC circuit if inductance is increased while capacitance remains constant?",
+    "options": [
+      "It increases",
+      "It decreases",
+      "It becomes zero",
+      "It remains unchanged"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"It decreases\"."
+  },
+  {
+    "id": "q53",
+    "subject": "Advanced ECE",
+    "question": "Which technique is commonly used to reduce high-frequency noise before ADC conversion?",
+    "options": [
+      "Anti-aliasing low-pass filter",
+      "High-pass amplifier",
+      "Rectifier",
+      "Oscillator"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The correct answer is \"Anti-aliasing low-pass filter\"."
+  },
+  {
+    "id": "q54",
+    "subject": "Advanced ECE",
+    "question": "What is the output?",
+    "codeSnippet": "A 12-bit ADC has how many possible digital levels?",
+    "options": [
+      "256",
+      "1024",
+      "2048",
+      "4096"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The correct answer is \"4096\"."
+  },
+  {
+    "id": "q55",
+    "subject": "Advanced ECE",
+    "question": "In digital communication, increasing the number of bits per symbol generally allows:",
+    "options": [
+      "Lower data rate only",
+      "More information per symbol",
+      "No change in information capacity",
+      "Elimination of noise"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"More information per symbol\"."
+  },
+  {
+    "id": "q56",
+    "subject": "Advanced ECE",
+    "question": "Which technique converts a continuous-time signal into a sequence of digital values?",
+    "options": [
+      "Sampling and quantization",
+      "Amplification only",
+      "Modulation only",
+      "Filtering only"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The correct answer is \"Sampling and quantization\"."
+  },
+  {
+    "id": "q57",
+    "subject": "Advanced ECE",
+    "question": "What is the time complexity of binary search on a sorted array?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n²)"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"O(log n)\"."
+  },
+  {
+    "id": "q58",
+    "subject": "Advanced ECE",
+    "question": "What is the output?",
+    "codeSnippet": "int x = 5;\nif (x > 3)\nprintf(\"IEEE\");\nelse\nprintf(\"ECE\");",
+    "options": [
+      "ECE",
+      "IEEE",
+      "IEEE ECE",
+      "Error"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"IEEE\"."
+  },
+  {
+    "id": "q59",
+    "subject": "Advanced ECE",
+    "question": "What is the output of this code?",
+    "codeSnippet": "int x = 2;\nfor(int i = 0; i < 3; i++)\nx = x * 2;\nprintf(\"%d\", x);",
+    "options": [
+      "4",
+      "8",
+      "16",
+      "32"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The correct answer is \"16\"."
+  },
+  {
+    "id": "q60",
+    "subject": "Advanced ECE",
+    "question": "Which algorithm has an average-case time complexity of O(n log n) for sorting?",
+    "options": [
+      "Linear Search",
+      "Bubble Sort",
+      "Merge Sort",
+      "Sequential Search"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The correct answer is \"Merge Sort\"."
+  },
+  {
+    "id": "q61",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "IEEE 802.3 primarily defines standards for:",
+    "options": [
+      "Wireless LAN",
+      "Ethernet",
+      "Bluetooth",
+      "Zigbee"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Ethernet\"."
+  },
+  {
+    "id": "q62",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "Which IEEE standard is associated with Wireless LAN (Wi-Fi)?",
+    "options": [
+      "IEEE 802.3",
+      "IEEE 802.11",
+      "IEEE 802.15.1",
+      "IEEE 802.16"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"IEEE 802.11\"."
+  },
+  {
+    "id": "q63",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "IEEE 802.15 is primarily related to:",
+    "options": [
+      "Personal Area Networks",
+      "Metropolitan Area Networks",
+      "Satellite communication",
+      "Optical fiber networks"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The correct answer is \"Personal Area Networks\"."
+  },
+  {
+    "id": "q64",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "Which IEEE standard family is associated with Wireless Personal Area Networks?",
+    "options": [
+      "802.1",
+      "802.3",
+      "802.11",
+      "802.15"
+    ],
+    "correctOptionIndex": 3,
+    "explanation": "The correct answer is \"802.15\"."
+  },
+  {
+    "id": "q65",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "IEEE 802.1Q is primarily associated with:",
+    "options": [
+      "VLAN tagging",
+      "Wi-Fi encryption",
+      "Ethernet physical layer",
+      "Bluetooth pairing"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The correct answer is \"VLAN tagging\"."
+  },
+  {
+    "id": "q66",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "Which IEEE standard is specifically associated with Power over Ethernet (PoE)?",
+    "options": [
+      "IEEE 802.3",
+      "IEEE 802.11",
+      "IEEE 802.15.4",
+      "IEEE 802.1X"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The correct answer is \"IEEE 802.3\"."
+  },
+  {
+    "id": "q67",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "IEEE 802.1X is primarily used for:",
+    "options": [
+      "Network access control/authentication",
+      "Ethernet cable manufacturing",
+      "Wireless modulation",
+      "Optical transmission"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The correct answer is \"Network access control/authentication\"."
+  },
+  {
+    "id": "q68",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "Which IEEE standard is historically associated with Bluetooth?",
+    "options": [
+      "802.11",
+      "802.15.1",
+      "802.3",
+      "802.16"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"802.15.1\"."
+  },
+  {
+    "id": "q69",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "IEEE 802.15.4 is strongly associated with technologies such as:",
+    "options": [
+      "Zigbee",
+      "Ethernet",
+      "Wi-Fi 6",
+      "DSL"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The correct answer is \"Zigbee\"."
+  },
+  {
+    "id": "q70",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "IEEE 802.16 was developed for:",
+    "options": [
+      "Wireless MAN / broadband wireless access",
+      "Bluetooth communication",
+      "Ethernet switching",
+      "RFID only"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The correct answer is \"Wireless MAN / broadband wireless access\"."
+  },
+  {
+    "id": "q71",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "In IEEE 802.11 networks, CSMA/CA is primarily used to:",
+    "options": [
+      "Detect collisions after they occur",
+      "Avoid collisions before transmission",
+      "Encrypt wireless packets",
+      "Increase antenna gain"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Avoid collisions before transmission\"."
+  },
+  {
+    "id": "q72",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "Which IEEE standard introduced the concept of VLAN tagging using a 4-byte tag inserted into Ethernet frames?",
+    "options": [
+      "IEEE 802.1Q",
+      "IEEE 802.11ac",
+      "IEEE 802.3af",
+      "IEEE 802.15.4"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The correct answer is \"IEEE 802.1Q\"."
+  },
+  {
+    "id": "q73",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "Which IEEE 802.11 feature allows multiple spatial streams to increase wireless throughput?",
+    "options": [
+      "CSMA/CD",
+      "MIMO",
+      "VLAN",
+      "PoE"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"MIMO\"."
+  },
+  {
+    "id": "q74",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "Which IEEE technology is most closely associated with Gigabit Ethernet over twisted-pair copper?",
+    "options": [
+      "IEEE 802.3ab",
+      "IEEE 802.11b",
+      "IEEE 802.15.4",
+      "IEEE 802.1Q"
+    ],
+    "correctOptionIndex": 0,
+    "explanation": "The correct answer is \"IEEE 802.3ab\"."
+  },
+  {
+    "id": "q75",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "IEEE 802.3af is associated with:",
+    "options": [
+      "Wi-Fi 5",
+      "Power over Ethernet",
+      "Bluetooth",
+      "VLAN"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Power over Ethernet\"."
+  },
+  {
+    "id": "q76",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "An ideal ADC has 12-bit resolution and an input range of 0–5 V. Approximately what is its LSB size?",
+    "options": [
+      "0.122 V",
+      "1.22 mV",
+      "12.2 mV",
+      "0.0122 V"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"1.22 mV\"."
+  },
+  {
+    "id": "q77",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "In a common-emitter BJT amplifier, increasing the collector resistance generally:",
+    "options": [
+      "Decreases voltage gain",
+      "Increases voltage gain",
+      "Makes current gain zero",
+      "Eliminates phase inversion"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Increases voltage gain\"."
+  },
+  {
+    "id": "q78",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "Which configuration of an operational amplifier provides a voltage gain of: [IMAGE]",
+    "options": [
+      "Non-inverting",
+      "Voltage follower",
+      "Inverting",
+      "Differential only"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The correct answer is \"Inverting\"."
+  },
+  {
+    "id": "q79",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "What is the output?",
+    "codeSnippet": "A MOSFET is primarily a:",
+    "options": [
+      "Current-controlled device",
+      "Voltage-controlled device",
+      "Temperature-controlled device",
+      "Frequency-controlled device"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Voltage-controlled device\"."
+  },
+  {
+    "id": "q80",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "For an ideal op-amp operating with negative feedback, the voltage difference between its input terminals is approximately:",
+    "options": [
+      "Infinite",
+      "Equal to supply voltage",
+      "Zero",
+      "Equal to output voltage"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The correct answer is \"Zero\"."
+  },
+  {
+    "id": "q81",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "If the cutoff frequency of an RC low-pass filter is increased, the required RC time constant should:",
+    "options": [
+      "Increase",
+      "Decrease",
+      "Remain infinite",
+      "Become zero"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Decrease\"."
+  },
+  {
+    "id": "q82",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "According to the Nyquist sampling theorem, a signal with maximum frequency of 10 kHz should theoretically be sampled at a frequency:",
+    "options": [
+      "Less than 10 kHz",
+      "Exactly 10 kHz",
+      "Greater than 20 kHz",
+      "Greater than 5 kHz only"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The correct answer is \"Greater than 20 kHz\"."
+  },
+  {
+    "id": "q83",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "In frequency modulation, the information signal primarily changes the:",
+    "options": [
+      "Carrier amplitude",
+      "Carrier frequency",
+      "Carrier phase only",
+      "Carrier power only"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Carrier frequency\"."
+  },
+  {
+    "id": "q84",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "In amplitude modulation, if the modulation index exceeds 1, the result is:",
+    "options": [
+      "Under-modulation",
+      "Perfect modulation",
+      "Over-modulation",
+      "Frequency modulation"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The correct answer is \"Over-modulation\"."
+  },
+  {
+    "id": "q85",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "Which modulation technique is generally more resistant to amplitude noise?",
+    "options": [
+      "AM",
+      "FM",
+      "ASK",
+      "OOK"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"FM\"."
+  },
+  {
+    "id": "q86",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "What is the output?",
+    "codeSnippet": "A 16-QAM system can theoretically transmit how many bits per symbol?",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "16"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"4\"."
+  },
+  {
+    "id": "q87",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "In a superheterodyne receiver, the intermediate frequency (IF) is used mainly to:",
+    "options": [
+      "Eliminate the antenna",
+      "Simplify filtering and amplification",
+      "Increase microphone sensitivity",
+      "Convert AC to DC"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Simplify filtering and amplification\"."
+  },
+  {
+    "id": "q88",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "Which device converts an electrical signal into an optical signal in a fiber-optic communication system?",
+    "options": [
+      "Photodiode",
+      "LED/Laser diode",
+      "LDR",
+      "Thermistor"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"LED/Laser diode\"."
+  },
+  {
+    "id": "q89",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "What is the output?",
+    "codeSnippet": "A photodiode is primarily used to:",
+    "options": [
+      "Generate magnetic fields",
+      "Detect optical signals",
+      "Amplify RF signals",
+      "Store electrical charge"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Detect optical signals\"."
+  },
+  {
+    "id": "q90",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "In a digital communication system, BER stands for:",
+    "options": [
+      "Bandwidth Efficiency Ratio",
+      "Bit Error Rate",
+      "Binary Encoding Range",
+      "Bit Energy Response"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Bit Error Rate\"."
+  },
+  {
+    "id": "q91",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "An 8-bit ADC has an input range of 0–2.56 V. What is the approximate voltage resolution?",
+    "options": [
+      "1 mV",
+      "10 mV",
+      "100 mV",
+      "0.1 V"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"10 mV\"."
+  },
+  {
+    "id": "q92",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "What is the output?",
+    "codeSnippet": "A QPSK system transmits 20 Msymbols/s. Ignoring coding and filtering overhead, its bit rate is:",
+    "options": [
+      "10 Mbps",
+      "20 Mbps",
+      "40 Mbps",
+      "80 Mbps"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The correct answer is \"40 Mbps\"."
+  },
+  {
+    "id": "q93",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "Which logic gate is known as a universal gate?",
+    "options": [
+      "XOR",
+      "AND",
+      "NAND",
+      "OR"
+    ],
+    "correctOptionIndex": 2,
+    "explanation": "The correct answer is \"NAND\"."
+  },
+  {
+    "id": "q94",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "For an ideal transformer, if the secondary voltage is twice the primary voltage, the secondary current is approximately:",
+    "options": [
+      "Twice the primary current",
+      "Half the primary current",
+      "Equal to primary current",
+      "Four times the primary current"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Half the primary current\"."
+  },
+  {
+    "id": "q95",
+    "subject": "IEEE, Electronics & Communication",
+    "question": "Which phenomenon occurs when a signal's frequency components arrive at different times through a communication channel?",
+    "options": [
+      "Thermal noise",
+      "Inter-symbol interference",
+      "Quantization",
+      "Clipping"
+    ],
+    "correctOptionIndex": 1,
+    "explanation": "The correct answer is \"Inter-symbol interference\"."
+  }
+]

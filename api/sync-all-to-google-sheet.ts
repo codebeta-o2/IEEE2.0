@@ -1,0 +1,46 @@
+import { submissions } from "./_store";
+import { submitToGoogleSheet } from "../server/googleSheetsClient";
+
+const DEFAULT_GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbwedbdM3ofZTlsUR1RtbbzgMw58hDHURQvGbeFsiYYbi_X9wrNMmmEAk2Mmpi_inuYSlQ/exec";
+
+export default async function handler(req: any, res: any) {
+  res.setHeader("Cache-Control", "no-store, no-cache, must-revalidate");
+
+  if (req.method !== "POST") {
+    return res.status(405).json({ success: false, message: "Method not allowed. Use POST." });
+  }
+
+  const targetUrl = String(req.body?.webAppUrl || process.env.GOOGLE_SHEET_WEBAPP_URL || DEFAULT_GOOGLE_SHEET_URL).trim();
+  try {
+    const parsed = new URL(targetUrl);
+    if (parsed.protocol !== "https:" || parsed.hostname !== "script.google.com" || !parsed.pathname.endsWith("/exec")) {
+      return res.status(400).json({ success: false, message: "Use a deployed Google Apps Script URL ending in /exec." });
+    }
+
+    const results = [];
+    for (const submission of [...submissions].reverse()) {
+      const result = await submitToGoogleSheet(
+        targetUrl,
+        { ...submission, submissionId: submission.id },
+        submission.giftAwarded,
+        submission.attemptNumber
+      );
+      results.push({
+        submissionId: submission.id,
+        candidate: submission.student.name,
+        enrollment: submission.student.enrollmentNumber,
+        success: result.success,
+        message: result.message,
+      });
+    }
+
+    return res.status(200).json({
+      success: true,
+      syncedCount: results.filter((result) => result.success).length,
+      total: results.length,
+      results,
+    });
+  } catch (error: any) {
+    return res.status(500).json({ success: false, message: error.message || "Bulk sync failed." });
+  }
+}

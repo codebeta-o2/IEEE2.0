@@ -1,0 +1,6 @@
+{
+  "name": "Offline MCQ Exam Portal",
+  "description": "Timed MCQ examination portal with offline mode enforcement, network auto-submission detection, and cognitive toggled question-option view.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

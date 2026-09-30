@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* Examination Anti-Cheating & Copy-Paste Prevention */
+.exam-prevent-copy,
+body.exam-mode,
+.prevent-select {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  -webkit-touch-callout: none !important;
+}
+
+/* Prevent image and text dragging */
+img, a, button, div, span, p, code, pre {
+  -webkit-user-drag: none;
+}
