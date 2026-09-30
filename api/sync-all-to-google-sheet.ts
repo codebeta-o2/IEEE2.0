@@ -1,8 +1,6 @@
 import { submissions } from "./_store";
 import { submitToGoogleSheet } from "../server/googleSheetsClient";
 
-const DEFAULT_GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbwedbdM3ofZTlsUR1RtbbzgMw58hDHURQvGbeFsiYYbi_X9wrNMmmEAk2Mmpi_inuYSlQ/exec";
-
 export default async function handler(req: any, res: any) {
   res.setHeader("Cache-Control", "no-store, no-cache, must-revalidate");
 
@@ -10,7 +8,10 @@ export default async function handler(req: any, res: any) {
     return res.status(405).json({ success: false, message: "Method not allowed. Use POST." });
   }
 
-  const targetUrl = String(req.body?.webAppUrl || process.env.GOOGLE_SHEET_WEBAPP_URL || DEFAULT_GOOGLE_SHEET_URL).trim();
+  const targetUrl = String(req.body?.webAppUrl || process.env.GOOGLE_SHEET_WEBAPP_URL || "").trim();
+  if (!targetUrl) {
+    return res.status(400).json({ success: false, message: "GOOGLE_SHEET_WEBAPP_URL is not configured in Vercel." });
+  }
   try {
     const parsed = new URL(targetUrl);
     if (parsed.protocol !== "https:" || parsed.hostname !== "script.google.com" || !parsed.pathname.endsWith("/exec")) {

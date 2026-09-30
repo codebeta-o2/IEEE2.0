@@ -1,7 +1,5 @@
 import { submitToGoogleSheet } from "../server/googleSheetsClient";
 
-const DEFAULT_GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbwedbdM3ofZTlsUR1RtbbzgMw58hDHURQvGbeFsiYYbi_X9wrNMmmEAk2Mmpi_inuYSlQ/exec";
-
 export default async function handler(req: any, res: any) {
   res.setHeader("Cache-Control", "no-store, no-cache, must-revalidate");
 
@@ -15,7 +13,10 @@ export default async function handler(req: any, res: any) {
       return res.status(400).json({ success: false, message: "Invalid submission payload" });
     }
 
-    const sheetUrl = (process.env.GOOGLE_SHEET_WEBAPP_URL || DEFAULT_GOOGLE_SHEET_URL).trim();
+    const sheetUrl = String(process.env.GOOGLE_SHEET_WEBAPP_URL || "").trim();
+    if (!sheetUrl) {
+      return res.status(503).json({ success: false, message: "GOOGLE_SHEET_WEBAPP_URL is not configured in Vercel." });
+    }
     const result = await submitToGoogleSheet(sheetUrl, {
       ...submission,
       submissionId: submission.id,

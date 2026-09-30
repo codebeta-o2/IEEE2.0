@@ -148,8 +148,7 @@ async function startServer() {
 
   // Google Sheet Web App Integration Storage
   // Pre-configured with the official IEEE deployment URL (kept strictly server-side)
-  const DEFAULT_GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbwedbdM3ofZTlsUR1RtbbzgMw58hDHURQvGbeFsiYYbi_X9wrNMmmEAk2Mmpi_inuYSlQ/exec";
-  let configuredGoogleSheetUrl = (process.env.GOOGLE_SHEET_WEBAPP_URL || DEFAULT_GOOGLE_SHEET_URL).trim();
+  let configuredGoogleSheetUrl = String(process.env.GOOGLE_SHEET_WEBAPP_URL || "").trim();
 
   // Deduplication caches: prevent duplicate row entries in Google Sheet
   const syncedSubmissionsCache = new Map<string, { success: boolean; message: string; data?: any }>();
@@ -524,7 +523,7 @@ async function startServer() {
 
     const { url } = req.body;
     const cleanUrl = String(url || "").trim();
-    configuredGoogleSheetUrl = cleanUrl || DEFAULT_GOOGLE_SHEET_URL;
+    configuredGoogleSheetUrl = cleanUrl;
     console.log(`[Exam Server] Google Sheet URL updated by invigilator.`);
 
     if (cleanUrl) {

@@ -1,5 +1,3 @@
-const DEFAULT_GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbwedbdM3ofZTlsUR1RtbbzgMw58hDHURQvGbeFsiYYbi_X9wrNMmmEAk2Mmpi_inuYSlQ/exec";
-
 export default async function handler(req: any, res: any) {
   res.setHeader("Cache-Control", "no-store, no-cache, must-revalidate");
 
@@ -9,7 +7,9 @@ export default async function handler(req: any, res: any) {
   }
 
   try {
-    const url = new URL((process.env.GOOGLE_SHEET_WEBAPP_URL || DEFAULT_GOOGLE_SHEET_URL).trim());
+    const configuredUrl = String(process.env.GOOGLE_SHEET_WEBAPP_URL || "").trim();
+    if (!configuredUrl) throw new Error("GOOGLE_SHEET_WEBAPP_URL is not configured");
+    const url = new URL(configuredUrl);
     url.searchParams.set("action", "checkAttempts");
     url.searchParams.set("enrollmentNumber", rawEnrollment);
     const response = await fetch(url);

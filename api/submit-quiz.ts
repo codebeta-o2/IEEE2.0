@@ -2,8 +2,6 @@ import rawQuestions from "../server/questions.json";
 import { submitToGoogleSheet } from "../server/googleSheetsClient";
 import { submissions } from "./_store";
 
-const DEFAULT_GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbwedbdM3ofZTlsUR1RtbbzgMw58hDHURQvGbeFsiYYbi_X9wrNMmmEAk2Mmpi_inuYSlQ/exec";
-
 function determineGift(percentage: number): string {
   if (percentage >= 90) return "IEEE Ceramic Coffee Mug";
   if (percentage > 80) return "Executive IEEE Metallic Pen";
@@ -14,7 +12,10 @@ function determineGift(percentage: number): string {
 const questionsMap = new Map<string, any>((rawQuestions as any[]).map((q) => [q.id, q]));
 
 async function getAttemptCount(enrollmentNumber: string): Promise<number> {
-  const sheetUrl = (process.env.GOOGLE_SHEET_WEBAPP_URL || DEFAULT_GOOGLE_SHEET_URL).trim();
+  const sheetUrl = String(process.env.GOOGLE_SHEET_WEBAPP_URL || "").trim();
+  if (!sheetUrl) return submissions.filter(
+    (submission) => submission.student.enrollmentNumber.trim().toUpperCase() === enrollmentNumber
+  ).length;
   try {
     const url = new URL(sheetUrl);
     url.searchParams.set("action", "checkAttempts");
@@ -142,19 +143,23 @@ export default async function handler(req: any, res: any) {
     // Forward directly to Google Sheet
     let sheetResult: any = { success: false, message: "Google Sheet sync was not confirmed." };
     try {
-      const sheetUrl = (process.env.GOOGLE_SHEET_WEBAPP_URL || DEFAULT_GOOGLE_SHEET_URL).trim();
-      sheetResult = await submitToGoogleSheet(sheetUrl, {
-        student,
-        score: correctCount,
-        totalQuestions,
-        percentage,
-        giftAwarded,
-        attemptNumber: priorAttempts + 1,
-        submissionReason,
-        timeSpentSeconds,
-        submissionId,
-        submittedAt,
-      }, giftAwarded, 1);
+      const sheetUrl = String(process.env.GOOGLE_SHEET_WEBAPP_URL || "").trim();
+      if (!sheetUrl) {
+        sheetResult = { success: false, message: "GOOGLE_SHEET_WEBAPP_URL is not configured in Vercel." };
+      } else {
+        sheetResult = await submitToGoogleSheet(sheetUrl, {
+          student,
+          score: correctCount,
+          totalQuestions,
+          percentage,
+          giftAwarded,
+          attemptNumber: priorAttempts + 1,
+          submissionReason,
+          timeSpentSeconds,
+          submissionId,
+          submittedAt,
+        }, giftAwarded, priorAttempts + 1);
+      }
     } catch (sheetErr: any) {
       console.warn("Google Sheet sync warning on Vercel:", sheetErr);
       sheetResult = { success: false, message: sheetErr.message || "Google Sheet sync failed." };

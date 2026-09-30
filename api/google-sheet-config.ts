@@ -1,8 +1,7 @@
-const DEFAULT_GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbwedbdM3ofZTlsUR1RtbbzgMw58hDHURQvGbeFsiYYbi_X9wrNMmmEAk2Mmpi_inuYSlQ/exec";
 const INVIGILATOR_KEY = "IEEE-INVIGILATOR-2026";
 
 function getSheetUrl(): string {
-  return (process.env.GOOGLE_SHEET_WEBAPP_URL || DEFAULT_GOOGLE_SHEET_URL).trim();
+  return String(process.env.GOOGLE_SHEET_WEBAPP_URL || "").trim();
 }
 
 export default async function handler(req: any, res: any) {
